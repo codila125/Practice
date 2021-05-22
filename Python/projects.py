@@ -77,3 +77,6 @@ while True:
     if ins == "Admin" or "admin":
         break
 print ("Welcome to your own hood", ola)
+
+#long time no see dude
+print ("Long time no see dude")
