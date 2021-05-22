@@ -81,4 +81,6 @@ print ("Welcome to your own hood", ola)
 #long time no see dude
 print ("Long time no see dude")
 print ("Hi")
+print ("lalala")
+print ("Halala")
 
