@@ -386,4 +386,4 @@ print ("Minimum is", smallest)
 
 
 
-#lets start with google crash course on Python
+#Now onto IBM lessons
