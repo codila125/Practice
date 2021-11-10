@@ -387,3 +387,107 @@ print ("Minimum is", smallest)
 
 
 #Now onto IBM lessons
+type(0.1)
+
+#changing the data types
+float(1)
+int(1.1)
+int("1")
+
+#boolean
+type(True)
+bool(0)
+int(True)
+
+print(25/3)
+print(25//3)
+
+#check python version
+import sys
+print(sys.version)
+
+n= "michael Jackson"
+p = n[0:5]
+print(p)
+print (len(n))
+print (3*n)
+t = n[::2] #prints every second string
+print(t)
+print ("he is \n the best")
+print ("he is \t the best")
+print ("he is \\ the best")
+b = n.upper()
+a = n.replace("michael", "messi")
+c = n.find("mic") #find the specific strings
+print (a, b, c)
+print ("hello" + "tori")
+
+#tuple
+tuple = ("hello", 1, 1.2, "ehy", 2, 3)
+p = tuple[1:3]
+print (p)
+print(len(tuple))
+#tuple cannot be modified
+tuple2 = ("hello", (1, 2, 3, 4), "bye")
+print (tuple2[1])
+t= tuple2[2][2]
+print (t)
+
+#lists are like tuple but can be modified
+list = ["hello", 1, 1, ("jakarta"), [1,2,3,4]] #using tuples and list inside list
+print (list[3][3])
+print (list[1:5])
+
+list1 = [1, 2, 3, 4]
+print (list+list1)
+list.extend(['helli'])
+print(list)
+list.append(["tori bachha","Fohori bachha"])
+print (list)
+
+list1[0]= "oyeoye"
+del(list1[2])
+print (list1)
+
+h = "hello bachha".split() #splits and puts in a list
+print (h)
+
+i = "tori, ofhori, nohori".split(",")
+print (i)
+
+list = list1 #if we consider both list as same, if we change one element, it also changes in other list as side effect
+list[0]= "hello"
+print (list, list1)
+
+b= list[:]#cloning
+print (b)
+
+dict = {"mamameyo":1973, "toribachha":1974, "list dekha": ["her", "list"], "tuple dekha":("her", "tuple")}
+print (dict["mamameyo"])
+print (dict['tuple dekha'])
+dict ['herna']= "herey"
+print (dict["herna"])
+del(dict["mamameyo"])
+print (dict)
+"mamameyo" in dict #to verify wheather mamameyo is in dict or not
+print(dict.keys())
+print(dict.values())
+
+#sets
+listss=["hello", "tori", "hello", 1 ,1 ,1]
+sete= {"hello", "bye", "hello",1 }#the positions will not be recorded in set
+pete= {"hello", "jakarta"}
+print (sete)#duplicate items will not be recorded 
+lett = set(listss)
+print (lett)
+sete.add("hhh")
+sete.remove(1)
+print(sete)
+"hhh" in sete
+hete = sete&pete
+print (hete)#prints common ones
+sete.issubset(pete)
+sete.union(pete)
+
+
+
