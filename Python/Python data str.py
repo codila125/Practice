@@ -483,6 +483,7 @@ for x in range (0,3):
 for i,x in enumerate(["hello", "tori", "bachha"]):
     print (i,x)
 
+#doesnot print after black
 squares = ["orange", "red", "orange", "red", "black", "red", "orange"]
 result = []
 i = 0
