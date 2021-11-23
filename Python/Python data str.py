@@ -450,3 +450,53 @@ print (l)
 for v,k in l[:10]:
     print (v, k)
 
+#new one
+a=6
+a==7
+a>0
+a<=6
+a!=6
+"prabesh"=="parbesh"
+
+r = input ('your age?')
+r = int(r)
+if r<18 :
+    print("you shall not pass kidoo")
+elif r==18:
+    print('just about good kiddo, get in')
+else:
+    print("You can pass")
+
+a = int(input('album year'))
+if a>1980 and a<1989:
+    print("the album was from 80's")
+elif a<1980 or a> 1990:
+    print ("album was not from 1980's")
+
+p = ["red", "yellow", "blue"]
+for i in range(0,3):
+    p[i]= "white"
+print(p)
+
+for x in range (0,3):
+    print (x+1)
+for i,x in enumerate(["hello", "tori", "bachha"]):
+    print (i,x)
+
+squares = ["orange", "red", "orange", "red", "black", "red", "orange"]
+result = []
+i = 0
+while squares[i]=="orange" or squares[i]=="red": 
+    result.append(squares[i])
+    i = i +1
+print (result)
+
+#Write a while loop to display the values of the Rating of an album playlist stored in the list
+#If the score is less than 6, exit the loop
+PlayListRatings = [10, 9.5, 10, 8, 7.5, 5, 10, 10]
+i = 0
+while PlayListRatings[i]>=6:
+    rating = (PlayListRatings[i])
+    print (rating)
+    i = i + 1    
+print ("it took",i, "songs to finally end the playlist")
