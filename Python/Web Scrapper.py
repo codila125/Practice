@@ -27,3 +27,17 @@ for url in urls:
             url = '{}{}'.format(site, url)
         response = requests.get(url)
         f.write(response.content)
+
+import pytube
+from pytube import YouTube
+url = input("Enter the url")
+url = str(url)
+s = input("Audio or Video")
+s = str(s)
+if s=="Audio" or s=="audio":
+    YouTube(url).streams.get_audio_only().download(output_path="/home/pralaxy/Downloads")
+elif s=="Video" or s=="video" or s=="vdo":
+    YouTube(url).streams.get_highest_resolution().download(output_path="/home/pralaxy/Downloads")
+
+
+
