@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+#image scrapping
 import re
 import requests
 from bs4 import BeautifulSoup
@@ -28,6 +29,7 @@ for url in urls:
         response = requests.get(url)
         f.write(response.content)
 
+#download Audio and Video from youtube
 import pytube
 from pytube import YouTube
 url = input("Enter the url")
