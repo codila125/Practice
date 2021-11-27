@@ -501,3 +501,48 @@ while PlayListRatings[i]>=6:
     print (rating)
     i = i + 1    
 print ("it took",i, "songs to finally end the playlist")
+
+#function
+album_rating = [1, 2, 5, 4, 8, 9, 0 ,4]
+sorted_album_rating = sorted(album_rating)
+print(sorted_album_rating)
+print(album_rating)
+album_rating.sort()
+print(album_rating)
+
+def add1(a,b):
+    """
+    this is called documentation string
+    """
+    d = a*b
+    print (a, "*", b, "equals \n", d)
+    return d
+
+add1(10,20)
+help(add1)
+
+def llll():
+    print ("empty")
+llll()
+
+#album ratings of diff artists
+def printrat(rate):
+    for k in (rate.keys()):
+        s=(rate[k])
+        print ("album of", k, "is rated", s)
+rate={"eena":10,"meeena":2,"reena":10,"tika":2}
+printrat(rate)
+
+def th():
+    date = 1982
+    return date
+date = 1700
+print (date)
+th()#here the value of date inside function is diff than outside of function
+#which means that the outer value doesnot affect the vlaue in side the functions
+
+def Pinkfloyd():
+    global sales #this "global" keyword can transfer the value of sales inside function to be effective outside as well unlike previous program where booth are differrent
+    sales = "25 Million"
+    return sales
+print (sales)
