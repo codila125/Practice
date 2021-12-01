@@ -546,3 +546,15 @@ def Pinkfloyd():
     sales = "25 Million"
     return sales
 print (sales)
+
+#exception handling
+try:
+    s = input("Your name")
+    c = int(input("Your age"))
+except:
+    print("unable to write data. pls use an integer in age")
+else:
+    print("your name is", s, "and age is", c)
+    print("the data is written")
+finally:#not really required in this program but is helpful for other big programs
+    print("The program has ended")
