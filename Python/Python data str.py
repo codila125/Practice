@@ -358,98 +358,6 @@ except:
 t = tuple()#tuple are more efficient
 dir(t)#only you can do count and index
 
-(x, y) = ("prabesh love", "afra")
-print(x)
-print(y)
-print (x,y)
-
-(0, 1, 2) < (1, 2, 3)
-if True:
-    print("good")
-
-("Prabesh", "Subekshya")>("Prabesh", "Afra")#prabesh are equal but S is greater than A
-if True:
-    print("Brother sister bond is good and Afra is life")
-else: print("Only Afra is life")
-
-d = {"subekshya":3, "prabesh":1, "Afra":2}#dictionary cant be sorted
-d.items()#it changes the dictionary to tuple
-sorted(d.items())#we sort the tuple which came from changing dictionary
-#it is sorted by key order 
-
-#now we sort the dictionary by changing to tuple and sort it according to the value order
-d = {"subekshya":3, "prabesh":1, "Afra":2}
-l = list()
-for k,v in d.items():
-    l.append((v,k))
-print(l)
-print("now sorting it")
-l = sorted(l)    
-print(l)
-print("again reversing it")
-l = sorted(l, reverse= True)
-print(l)
-
-#top 10 most common wrods in the file
-f = input("a file")
-f = open(f)
-d= dict()
-for lines in f:
-    lines = lines.split()
-    for word in lines:
-        d[word] = d.get(word, 0) + 1
-l = list()
-for k,v in d.items():
-    l.append((v,k))
-l = sorted(l, reverse = True)
-print (l)
-print("now for top 10")
-for v,k in l[:10]:
-    print (v, k)
-
-#1 Programme
-#top 10 most common wrods in the file
-try:
-    f = input("a file")
-    f = open(f)
-except:
-    print("your file name is wrong, so i put it myself")
-    f = ("Programming.txt")
-    f = open(f)
-d= dict()
-for lines in f:
-    lines = lines.split()
-    for word in lines:
-        d[word] = d.get(word, 0) + 1
-l = list()
-for k,v in d.items():
-    l.append((v,k))
-l = sorted(l, reverse = True)
-print (l)
-print("now for top 10")
-for v,k in l[:10]:
-    print (v, k)
-    
-#doing 1 programme by list comprehension method
-try:
-    f = input("a file")
-    f = open(f)
-except:
-    print("your file name is wrong, so i put it myself")
-    f = ("Programming.txt")
-    f = open(f)
-d= dict()
-for lines in f:
-    lines = lines.split()
-    for word in lines:
-        d[word] = d.get(word, 0) + 1
-l = list()
-l = sorted( [ (v,k) for k,v in d.items() ] )#list comprehension
-l = sorted(l, reverse = True)
-print (l)
-for v,k in l[:10]:
-    print (v, k)
-
 #new one
 a=6
 a==7
@@ -558,3 +466,12 @@ else:
     print("the data is written")
 finally:#not really required in this program but is helpful for other big programs
     print("The program has ended")
+
+#Function of global done from here
+def new_func():
+    global x
+    x = input("sales")
+new_func()
+print(x)
+#to here
+
