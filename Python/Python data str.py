@@ -439,6 +439,7 @@ def printrat(rate):
         s=(rate[k])
         print ("album of", k, "is rated", s)
 rate={"eena":10,"meeena":2,"reena":10,"tika":2}
+print(rate.keys())
 printrat(rate)
 
 def th():
