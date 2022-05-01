@@ -27,5 +27,5 @@ void main()
     else if (b > a && b > c)
         printf("%d is the greatest among three numbers", b);
     else
-        printf("%d is the greatest among three numbers", c);
+        printf("%d is the greatest among three numbersssss", c);
 }
